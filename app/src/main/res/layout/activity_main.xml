@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFEEFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+    <kr.yeon.android.shadow.view.ShadowImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_plus" />
+
+    <kr.yeon.android.shadow.view.ShadowImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_plus"
+            app:shadowX="2dp"
+            app:shadowBgColor="@android:color/transparent"
+            app:shadowBgRadius="4dp"
+            app:shadowBlurSize="6dp"
+            app:shadowStartColor="#26888888"
+            app:shadowY="2dp" />
+
+    <ImageView
+            android:id="@+id/iv_test1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_plus" />
+
+    <kr.yeon.android.shadow.view.ShadowImageView
+            android:id="@+id/iv_test2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_plus" />
+
+    <kr.yeon.android.shadow.layout.ShadowConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="12dp"
+            app:shadowBorderColor="#FFFF0000"
+            app:shadowBorderSize="1dp"
+            app:shadowStartColor="#FFFFFF00"
+            app:shadowEndColor="#990000FF"
+            app:shadowBlurSize="16dp"
+            app:shadowBgRadius="10dp"
+            app:shadowX="2dp">
+
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_plus"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+    </kr.yeon.android.shadow.layout.ShadowConstraintLayout>
+
+
+</LinearLayout>

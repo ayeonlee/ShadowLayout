@@ -47,20 +47,17 @@ interface ShadowView  {
 
             a.getDimension(R.styleable.ShadowLayout_shadowBlurSize, -1f).takeIf {
                 it >= 0f
-            }?.apply { shadowBuilder.blurSize = this }
+            }?.apply { shadowBuilder.shadowBlurSize = this }
             a.getDimension(R.styleable.ShadowLayout_shadowX, 0f).takeIf {
                 it >= 0f
-            }?.apply { shadowBuilder.x = this }
+            }?.apply { shadowBuilder.shadowX = this }
             a.getDimension(R.styleable.ShadowLayout_shadowY, 0f).takeIf {
                 it >= 0f
-            }?.apply { shadowBuilder.y = this }
+            }?.apply { shadowBuilder.shadowY = this }
 
-            a.getColor(R.styleable.ShadowLayout_shadowStartColor, 0).takeIf {
+            a.getColor(R.styleable.ShadowLayout_shadowColor, 0).takeIf {
                 it != 0
-            }?.apply { shadowBuilder.startColor = this }
-            a.getColor(R.styleable.ShadowLayout_shadowEndColor, 0).takeIf {
-                it != 0
-            }?.apply { shadowBuilder.endColor = this }
+            }?.apply { shadowBuilder.shadowColor = this }
 
             a.getColor(R.styleable.ShadowLayout_shadowBgColor, 0).takeIf {
                 it != 0

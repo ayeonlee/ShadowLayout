@@ -5,6 +5,7 @@ import android.graphics.Rect
 import android.graphics.drawable.Drawable
 import android.support.constraint.ConstraintLayout
 import android.util.AttributeSet
+import android.view.View
 import kr.yeon.android.shadow.ShadowView
 
 /**
@@ -27,6 +28,8 @@ class ShadowConstraintLayout : ConstraintLayout, ShadowView {
 
 
     private fun init(context: Context, attrs: AttributeSet?, defStyleAttr: Int) {
+        setLayerType(View.LAYER_TYPE_SOFTWARE, null)
+
         initOriginPadding(paddingLeft, paddingTop, paddingRight, paddingBottom)
 
         background = makeShadowDrawable(context, attrs, this)

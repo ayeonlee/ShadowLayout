@@ -1,2 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kr.yeon.android.shadow" />
+<manifest package="kr.yeon.android.shadow" />

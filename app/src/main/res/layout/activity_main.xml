@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFEEFF"
+        android:background="#FFFFFF"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="16dp"
@@ -17,6 +17,7 @@
             android:scaleType="fitXY"
             android:src="@drawable/btn_plus" />
 
+
     <kr.yeon.android.shadow.view.ShadowImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -24,10 +25,12 @@
             android:scaleType="fitXY"
             android:src="@drawable/btn_plus"
             app:shadowX="2dp"
-            app:shadowBgColor="@android:color/transparent"
-            app:shadowBgRadius="4dp"
-            app:shadowBlurSize="6dp"
-            app:shadowStartColor="#26888888"
+            app:shadowBgColor="@android:color/white"
+            app:shadowBgRadius="6dp"
+            app:shadowBlurSize="8dp"
+            app:shadowBorderSize="1dp"
+            app:shadowBorderColor="#000FFF"
+            app:shadowColor="#26767676"
             app:shadowY="2dp" />
 
     <ImageView
@@ -35,7 +38,6 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="4dp"
-            android:padding="4dp"
             android:scaleType="fitXY"
             android:src="@drawable/btn_plus" />
 
@@ -58,11 +60,10 @@
             android:paddingBottom="12dp"
             app:shadowBorderColor="#FFFF0000"
             app:shadowBorderSize="1dp"
-            app:shadowStartColor="#FFFFFF00"
-            app:shadowEndColor="#990000FF"
+            app:shadowColor="#FFFFFF00"
             app:shadowBlurSize="16dp"
             app:shadowBgRadius="10dp"
-            app:shadowX="2dp">
+            app:shadowX="12dp">
 
         <ImageView
                 android:layout_width="100dp"
